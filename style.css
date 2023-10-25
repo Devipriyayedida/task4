@@ -1,0 +1,300 @@
+body {
+    margin: 0;
+    position: relative;
+
+}
+
+.page-logo {
+    background: #3399cc;
+
+}
+
+h1 {
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    line-height: 100px;
+    font-weight: normal;
+    font-size: 45px;
+    padding-left: 17px;
+    margin: 0;
+}
+
+ul.nav-list-items {
+    margin: 0;
+    background-color: #333333;
+    height: 28px;
+    list-style-type: none;
+    font-family: "noto sans";
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+li.navigation-list-item:hover {
+    background-color: #FF9900;
+    border-left: #FFF solid 4px;
+    background-clip: padding-box;
+}
+
+li.navigation-list-item:hover a {
+    color: #000000;
+}
+
+.active {
+    background-color: #FF9900;
+    border-left: #FFF solid 4px;
+    background-clip: padding-box;
+}
+
+.active a {
+    color: #000000;
+}
+
+li.navigation-list-item {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 28px;
+    padding: 0px 12px;
+}
+
+li.navigation-list-item:last-child {
+    float: right;
+    padding: 2px 22px;
+}
+
+img {
+    width: 22px;
+}
+.news-section {
+    max-width: 670px;
+    border: solid 1px #cdcdcd;
+    margin: 18px 38px;
+    font-family: 'Noto Sans';
+    min-height: 138px;
+}
+h2.news-section-head {
+    
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 6px 10px 0;
+    font-weight: 600;
+}
+ul.news-section-list {
+    list-style: "-   ";
+    margin: 0;
+    font-family: 'Noto Sans';
+    font-size: 12px;
+    padding: 6px 18px 12px 26px;
+}
+li.news-list-item {
+    font-weight: 600;
+    line-height: 36px;
+}
+ 
+.welcome-section {
+    margin: 21px 38px;
+    font-family: 'Noto Sans';
+    max-width: 1000px;
+    line-height: 16px;
+}
+p.welcome-section-para {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    padding-bottom:16px ;
+    margin: 0;
+}
+h2.welcome-section-head {
+   
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: 16px;
+    padding-top: 10px;
+}
+
+p.career-content {
+    width: 60%;
+    font-family: 'Segoe UI',  sans-serif;
+    font-size: 16px;
+    padding-left: 44px;
+    padding-bottom: 22px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    justify-content: flex-start;
+    padding: 0 44px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.form-career {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    justify-content: flex-start;
+    padding: 0 44px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.form .form-field {
+    display: flex;
+}
+
+.form-career .form-field {
+    display: flex;
+}
+
+.form .radios {
+    display: flex;
+    flex-direction: column;
+}
+
+.know-more-field,
+.tell-more-field {
+    flex-direction: column;
+    gap: 5px 0;
+}
+
+.career-title {
+    font-family: "Century Gothic", sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    padding: 22px 44px;
+    margin: 0;
+}
+
+.uploader-wrapper {
+    display: none;
+    /* position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #EEE;
+    border: solid 1px #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px; */
+}
+
+.uploader-wrapper .file-uploader {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+span {
+    color: red;
+}
+
+.form .form-field label {
+    width: 218px;
+}
+
+.form-career .form-field label {
+    width: 150px;
+}
+
+.form-career .form-field input {
+    border-bottom: #000000 1px solid;
+    border-right: #000000 1px solid;
+}
+
+.form .form-field input {
+    border-bottom: #000000 1px solid;
+    border-right: #000000 1px solid;
+}
+
+#state {
+    border-top: #000000 1px solid;
+    border-left: #000000 1px solid;
+}
+
+p {
+    margin: 0;
+}
+
+.gender-field p {
+    width: 212px;
+}
+
+.contact-me-field {
+    display: flex;
+    align-items: center;
+}
+
+.contact-me-field p {
+    width: 212px;
+}
+
+textarea {
+    width: 300px;
+    overflow-y: scroll;
+    resize: none;
+    border-top: #000000 2px solid;
+    border-left: #000000 2px solid;
+}
+
+.send-clear.form-field {
+    gap: 0px 20px;
+}
+
+.send.form-field {
+    width: 258px;
+    justify-content: right;
+}
+
+button#send {
+    padding-right: 44px;
+    font-weight: 600;
+    font-family: "century gothic";
+    font-size: 12px;
+}
+
+.clear-form {
+    outline: none;
+    border: solid 0.5px #000;
+    padding-right: 44px;
+    font-weight: 600;
+    font-family: "century gothic";
+    font-size: 12px;
+}
+
+.resume-field button {
+    font-weight: 600;
+}
+
+input#browse {
+    font-weight: 600;
+    font-size: 12px;
+    font-family: "century gothic";
+    padding-left: 20px;
+}
+
+.information {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.button-div {
+    padding-left: 20px;
+}
+
+.show-uploader {
+    display: block;
+}
