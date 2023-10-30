@@ -62,6 +62,7 @@ li.navigation-list-item {
     padding: 0px 12px;
 }
 
+
 li.navigation-list-item:last-child {
     float: right;
     padding: 2px 22px;
@@ -175,7 +176,11 @@ p.career-content {
     padding: 22px 44px;
     margin: 0;
 }
-
+.resume-box{
+    width: 175px;
+    border: 1px solid black;
+    box-shadow: 1px 1px black inset;
+}
 .uploader-wrapper {
     display: none;
     /* position: absolute;
@@ -200,6 +205,12 @@ p.career-content {
 span {
     color: red;
 }
+
+.success {
+    color: green;
+    font-size: 24px;
+  }
+
 
 .form .form-field label {
     width: 218px;

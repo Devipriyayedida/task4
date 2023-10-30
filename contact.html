@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <title>Task 4</title>
+        <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;800&display=swap"
+    rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+          rel="stylesheet"
+        />
+      </head> 
+      <body>
+        <div class="page-header">
+            <div class="page-logo">
+              <h1>HEALTHONUS</h1>
+            </div>
+            <div class="navigation-list">
+                <ul class="nav-list-items">
+                  <li class="navigation-list-item"><a href="./index.html">Home</a></li>
+                  <li class="navigation-list-item"><a href="#">Services</a></li>
+                  <li class="navigation-list-item">
+                    <a href="./career.html">Careers</a>
+                  </li>
+                  <li class="navigation-list-item active"><a href="#">Contact</a></li>
+                  <li class="navigation-list-item">
+                    <img src="./blog-icon.png" alt="logo" />
+                  </li>
+                </ul>
+              </div>
+          </div>
+          <h3 class="career-title">Contact Us</h3>
+          <form class="form" id="form" onsubmit="validateForm(event)">
+      
+            <div class="name-field form-field" id="name-div">
+              <label for="name">My Name: </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                onfocus="validateName()"
+                oninput="validateName()"
+              />
+              <span>*</span>
+            </div>
+            <div class="email-field form-field" id="email-div">
+              <label for="email">My Email Address: </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                onfocus="validateEmail()"
+                oninput="validateEmail()"
+              />
+              <span>*</span>
+            </div>
+            <div class="telephone-number-field form-field">
+              <label for="telephone-number">My Telephone Number: </label>
+              <input type="tel" id="telephone-number" />
+            </div>
+            <div class="org-field form-field" id="org-div">
+              <label for="org">My Organization Name: </label>
+              <input
+                type="text"
+                id="org"
+                name="organisation"
+                onfocus="validateOrg()"
+                oninput="validateOrg()"
+              />
+              <span>*</span>
+            </div>
+            <div class="city-field form-field">
+              <label for="city">My City </label>
+              <input type="text" id="city" />
+            </div>
+            <div class="gender-field form-field">
+              <p>Gender:</p>
+              <div class="radios" id="user_gender" onchange="helloMessage()">
+                <label><input type="radio" name="gender" value="male" />Male</label>
+                <label>
+                  <input type="radio" name="gender" value="female" />Female
+                </label>
+              </div>
+            </div>
+            <div class="state-field form-field">
+                <label for="state">My State or Province:</label>
+                <select name="plan" id="state" onchange="makePromotionCodeHandler()">
+                  <option value="none" selected disabled hidden>
+                    Select State or Province
+                  </option>
+                  <option value="Andhra Pradesh">Andhra Pradesh</option>
+                  <option value="Tamil Nadu">Tamil Nadu</option>
+                  <option value="Kerala">Kerala</option>
+                  <option value="Karnataka">Karnataka</option>
+                </select>
+              </div>
+              <div class="contact-me-field form-field">
+                <p>Please Contact Me By:</p>
+                <div class="radios">
+                  <label
+                    ><input type="radio" name="contact-me" value="email" />Email</label
+                  >
+                  <label
+                    ><input type="radio" name="contact-me" value="phone" />Phone</label
+                  >
+                  <label
+                    ><input type="radio" name="contact-me" value="both" />Both</label
+                  >
+                </div>
+                
+              </div>
+              <div class="promotion-code-field form-field">
+                <label for="promotion-code">Promotion Code:</label>
+                <input type="text" id="promotion-code" />
+              </div>
+              <div>
+                <p>Optional Information</p>
+                <p class="information">
+                  This information is optional but it help us to serve you better.
+                </p>
+              </div>
+              <div class="website-field form-field">
+                <label for="website">My Website Address is:</label>
+                <input type="url" id="website" />
+              </div>
+              <div class="tell-more-field form-field">
+                <label for="tell-more">Tell Us More About Your Organization:</label>
+                <textarea rows="6" cols="60" id="tell-more"></textarea>
+              </div>
+              <div class="know-more-field form-field">
+                <label for="know-more">What I'd really like to know is:</label>
+                <textarea rows="5" cols="50" id="know-more"></textarea>
+              </div>
+              <div class="send-clear form-field">
+                <button class="send-message" id="send">Send Message</button>
+                <input type="reset" value="Clear Form" class="clear-form" onclick="removeElements()"/>
+                <!--Reset form button-->
+              </div>
+          </form>
+          <script src="./contact_script.js"></script>
+      </body>
+</html>
