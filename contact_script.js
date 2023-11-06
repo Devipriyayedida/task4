@@ -121,6 +121,7 @@ function helloMessage() {
   }
 }
 
+// promocode
 
 function makePromotionCodeHandler() {
  
